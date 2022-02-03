@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-teal-400 p-6">
+    <nav className="flex items-center justify-between flex-wrap bg-teal-400 px-10 pt-3 pb-3">
       <div className="flex items-center flex-no-shrink text-white mr-6">
         <svg
           className="h-8 w-8 mr-2"
@@ -32,13 +32,13 @@ const Header = () => {
       <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div className="text-sm lg:flex-grow">
           <a
-            href="#responsive-header"
+            href="/"
             className="block mt-4 text-xl lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4"
           >
             Home
           </a>
           <a
-            href="#responsive-header"
+            href="cost-estimation"
             className="block mt-4 text-xl lg:inline-block  lg:mt-0 text-teal-lighter hover:text-white mr-4"
           >
             Cost Estimation
