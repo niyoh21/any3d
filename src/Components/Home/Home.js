@@ -28,16 +28,25 @@ const Home = () => {
         </div>
         <div className="flex flex-row h-96">
           <div
-            className="bg-3D-Print-Image-2 hover:scale-[101%]
+            className="bg-3D-Print-Image-2 hover:scale-[105%]
             bg-no-repeat bg-cover px-20 flex flex-1 justify-center
              transition-all duration-400 ease-linear group
-             items-center mr-3 shadow-2xl hover:rounded-3xl"
+             items-center mr-3 hover:mr-20 shadow-2xl hover:rounded-3xl "
           >
             <p className="xl:text-6xl 2xl:text-8xl xs:text-xl md:text-4xl text-white text-center ">
               3D Design / Modeling
             </p>
           </div>
-          <div className="bg-blue-600 flex-1 ml-3 rounded-3xl"></div>
+          <div
+            className="bg-Shop-Logo-2 hover:scale-[105%]
+            bg-no-repeat bg-cover px-20 flex flex-1 justify-center
+             transition-all duration-400 ease-linear group
+             items-center mr-3 shadow-2xl hover:rounded-3xl hover:ml-20"
+          >
+            <p className="xl:text-7xl 2xl:text-9xl xs:text-2xl md:text-5xl text-white text-center ">
+              Shop
+            </p>
+          </div>{" "}
         </div>
       </div>
     </React.Fragment>

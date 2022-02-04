@@ -44,13 +44,13 @@ const Header = () => {
             Cost Estimation
           </a>
           <a
-            href="#responsive-header"
+            href="contact-us"
             className="block mt-4 text-xl lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4"
           >
             Contact Us
           </a>
           <a
-            href="#responsive-header"
+            href="about-us"
             className="block mt-4 text-xl lg:inline-block lg:mt-0 text-teal-lighter hover:text-white "
           >
             About Us

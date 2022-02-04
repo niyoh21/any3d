@@ -6,12 +6,16 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import CostEstimation from "./Components/CostEstimation/CostEstimation";
+import ContactUs from "./Components/ContactUs/ContactUs";
+import AboutUs from "./Components/AboutUs/AboutUs";
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}></Route>
       <Route path="cost-estimation" element={<CostEstimation />} />
+      <Route path="contact-us" element={<ContactUs />} />
+      <Route path="about-us" element={<AboutUs />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
