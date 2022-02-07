@@ -1,18 +1,23 @@
 import React from "react";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
-    <React.Fragment>
-      <h1 className="text-center mt-10 text-8xl">Services Offered</h1>
-      <div className="flex flex-col mt-10 mx-20 h-screen ">
+    <div className="h-full">
+      <h1 className="text-center mt-10 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
+        Services Offered
+      </h1>
+      <div className="flex flex-col mt-10 mx-20 pb-20 ">
         <div
           className="bg-slate-100 h-[32rem] mb-6 pt-2 pb-2 pr-2 flex flex-row justify-center
          items-center shadow-2xl hover:rounded-3xl hover:bg-slate-600
           hover:text-white transition-all duration-400 ease-linear group"
+          onClick={() => navigate("/printing")}
         >
           <div className=" h-[30rem] w-2/5 flex flex-col justify-center px-2 sm:px-10">
             <div>
-              <p className="xl:text-7xl 2xl:text-9xl xs:text-xl md:text-4xl  ">
+              <p className="xl:text-7xl 2xl:text-8xl xs:text-xl md:text-4xl  ">
                 3D Printing
               </p>
             </div>
@@ -31,10 +36,11 @@ const Home = () => {
             className="bg-3D-Print-Image-2 hover:scale-[105%]
             bg-no-repeat bg-cover px-20 flex flex-1 justify-center
              transition-all duration-400 ease-linear group
-             items-center mr-3 hover:mr-20 shadow-2xl hover:rounded-3xl "
+             items-center mr-3 hover:mr-20 shadow-2xl hover:rounded-3xl"
+            onClick={() => navigate("/design")}
           >
-            <p className="xl:text-6xl 2xl:text-8xl xs:text-xl md:text-4xl text-white text-center ">
-              3D Design / Modeling
+            <p className="xl:text-6xl 2xl:text-7xl xs:text-xl md:text-4xl text-white text-center ">
+              3D Design & Modeling
             </p>
           </div>
           <div
@@ -42,14 +48,15 @@ const Home = () => {
             bg-no-repeat bg-cover px-20 flex flex-1 justify-center
              transition-all duration-400 ease-linear group
              items-center mr-3 shadow-2xl hover:rounded-3xl hover:ml-20"
+            onClick={() => navigate("/shop")}
           >
-            <p className="xl:text-7xl 2xl:text-9xl xs:text-2xl md:text-5xl text-white text-center ">
+            <p className="xl:text-7xl 2xl:text-8xl xs:text-2xl md:text-5xl text-white text-center ">
               Shop
             </p>
           </div>{" "}
         </div>
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 

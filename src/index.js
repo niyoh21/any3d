@@ -8,11 +8,20 @@ import Home from "./Components/Home/Home";
 import CostEstimation from "./Components/CostEstimation/CostEstimation";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import AboutUs from "./Components/AboutUs/AboutUs";
+import Printing from "./Components/Printing/Printing";
+import DesignAndModeling from "./Components/DesignAndModeling/DesignAndModeling";
+import Shop from "./Components/Shop/Shop";
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}></Route>
+      <Route path="/" element={<App />}>
+        <Route path="/" element={<Home />} />
+        <Route path="printing" element={<Printing />} />
+        <Route path="design" element={<DesignAndModeling />} />
+        <Route path="shop" element={<Shop />} />
+      </Route>
+      <Route path="*" element={<App />} />
       <Route path="cost-estimation" element={<CostEstimation />} />
       <Route path="contact-us" element={<ContactUs />} />
       <Route path="about-us" element={<AboutUs />} />

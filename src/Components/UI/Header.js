@@ -1,6 +1,9 @@
 import React from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   return (
     <nav className="flex items-center justify-between flex-wrap bg-teal-400 px-10 pt-3 pb-3">
       <div className="flex items-center flex-no-shrink text-white mr-6">
@@ -13,9 +16,9 @@ const Header = () => {
         >
           <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
         </svg>
-        <span className="font-semibold text-3xl tracking-tight">
+        <a href="/" className="font-semibold text-3xl tracking-tight">
           Any3D Prints
-        </span>
+        </a>
       </div>
       <div className="block lg:hidden">
         <button className="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
@@ -33,7 +36,9 @@ const Header = () => {
         <div className="text-sm lg:flex-grow">
           <a
             href="/"
-            className="block mt-4 text-xl lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4"
+            className={`block mt-4 text-xl lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 ${
+              location.pathname == "/" ? "text-white" : ""
+            }`}
           >
             Home
           </a>

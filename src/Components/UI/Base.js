@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 const Base = (props) => {
   return (
-    <div className="h-max">
+    <div className="h-screen">
       <Header />
       {/* <Login /> */}
       {props.children}
