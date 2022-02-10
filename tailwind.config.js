@@ -26,6 +26,7 @@ module.exports = {
         "Shop-Logo": "url('/src/Images/shop-logo.jpg')",
         "Shop-Logo-2": "url('/src/Images/shop-logo2.jpg')",
         "Sample-Item": "url('/src/Images/sample_item.png')",
+        "Resin-Printing": "url('/src/Images/resin_printing.gif')",
       },
     },
   },
